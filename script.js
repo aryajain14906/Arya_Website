@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
       { prompt: "$ ", text: "whoami" },
       { text: "arya_jain — CS + Econ, BITS Pilani Goa" },
       { prompt: "$ ", text: "status --current" },
-      { text: "captain @ team-grease-monkeys · learning AI systems" },
+      { text: "captain:  team-grease-monkeys · learning AI systems" },
       { prompt: "$ ", text: "./launch_portfolio.sh" },
       { text: "done. welcome ✨" },
     ];
@@ -74,14 +74,14 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     "resume-rag": {
       title: "Resume RAG System",
-      badge: "local · scaling up", badgeClass: "wip",
+      badge: "done", badgeClass: "done",
       desc: "Built for HR teams drowning in resumes — ask any question in plain language and it retrieves whichever resume matches best, ranked by relevance.",
       learned: ["Document retrieval", "Ranking algorithms", "Python", "HR-tech domain research"],
       // TODO: replace with your real repo URL once one exists
       link: "https://github.com/aryajain14906/Resume_Rag"
     },
     "jarvis": {
-      title: "Basic Jarvis",
+      title: "Jarvis",
       badge: "in progress", badgeClass: "wip",
       desc: "speech-to-speech AI assistant — say something, it understands, it talks back.",
       learned: ["Speech-to-text", "Text-to-speech", "Real-time audio pipelines", "Python"],
