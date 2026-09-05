@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arya Jain — builder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== INTRO / BOOT SCREEN ===================== -->
+<div class="intro-overlay" id="introOverlay">
+  <div class="intro-term">
+    <div class="term-bar">
+      <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
+      <span class="term-title">arya@bits-goa</span>
+    </div>
+    <div class="term-body" id="introTermBody"></div>
+  </div>
+</div>
+
+
+<!-- ===================== TOP BAR (reference-style nav) ===================== -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="tb-left">
+      <div class="tb-name">Arya <span class="tb-accent">Jain</span></div>
+    </div>
+
+    <nav class="tb-nav">
+      <a href="#home">home</a>
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#experience">exp</a>
+      <a href="#projects">projects</a>
+    </nav>
+
+    <div class="tb-right">
+      <a href="#contact" class="nav-cta">let's talk</a>
+      <button class="tb-burger" id="tbBurger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-menu" id="mobileMenu">
+  <a href="#home">home</a>
+  <a href="#about">about</a>
+  <a href="#skills">skills</a>
+  <a href="#experience">experience</a>
+  <a href="#projects">projects</a>
+  <a href="#contact">let's talk</a>
+</nav>
+
+<!-- ===================== HOME ===================== -->
+<section id="home">
+  <div class="blob-bg"><div class="blob" id="blob"></div></div>
+  <div class="container hero">
+    <span class="pill"><span class="pulse-dot"></span> open to internships + collabs</span>
+    <h1>hey, i'm arya <span class="grad-text">👋</span><br>i build things<br>that <span class="grad-text">actually work.</span></h1>
+    <div class="btn-row">
+      <a href="#projects" class="btn grad">see my work ↓</a>
+      <a href="assets/Arya_Jain_Resume.pdf" download class="btn outline">grab my resume</a>
+    </div>
+  </div>
+
+  <!--<div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>
+        <span><i>★</i> RAG SYSTEMS</span>
+        <span><i>★</i> HYDROGEN ATV</span>
+        <span><i>★</i> BITS PILANI GOA</span>
+        <span><i>★</i> TEAM CAPTAIN</span>
+        <span><i>★</i> BUILDING IN PUBLIC</span>
+        <span><i>★</i> RAG SYSTEMS</span>
+        <span><i>★</i> HYDROGEN ATV</span>
+        <span><i>★</i> BITS PILANI GOA</span>
+        <span><i>★</i> TEAM CAPTAIN</span>
+        <span><i>★</i> BUILDING IN PUBLIC</span>
+      </span>
+    </div>
+  </div>
+</section>-->
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about">
+  <div class="container">
+    <div class="sec-head"><h2>a little about me</h2></div>
+
+    <div class="bento">
+      <div class="b-cell photo tall">
+        <div class="photo-frame" id="photoFrame">
+          <img src="assets/photo1.jpeg" alt="Arya Jain" onerror="this.style.display='none'; document.getElementById('photoPlaceholder').style.display='flex';">
+          <div class="photo-placeholder" id="photoPlaceholder">
+            <span>📸</span>
+            <p>add your photo at<br><code>assets/photo.jpg</code></p>
+          </div>
+        </div>
+      </div>
+      <div class="b-cell wide3 tall">
+        <h3>the short version</h3>
+        <p>I’m a CS + Econ student at BITS Pilani who likes building things that actually get used. Right now, that means a hydrogen bi-fuel All-Terrain Vehicle with a 60-person team, advanced RAG systems, AI agents, and whatever else needs shipping.
+</p>
+      </div>
+      <!--<div class="b-cell grad">
+        <div class="n">7.9</div>
+        <div class="l">cgpa / 10</div>
+      </div>
+      <div class="b-cell">
+        <div class="n">60+</div>
+        <div class="l">people on my SAE team</div>
+      </div>
+      <div class="b-cell">
+        <div class="n">1,300+</div>
+        <div class="l">people reached at an event I ran</div>
+      </div>
+      <div class="b-cell">
+        <div class="n">500+</div>
+        <div class="l">sponsor leads managed</div>
+      </div>-->
+    </div>
+
+    <div style="margin-top:56px;">
+      <span class="sec-tag">// education</span>
+      <div class="edu-item">
+        <div>
+          <div class="school">BITS Pilani, Goa Campus</div>
+          <div class="sub">B.E. Computer Science + M.Sc. Economics</div>
+        </div>
+        <div class="meta">CGPA: 7.7</div>
+      </div>
+      <div class="edu-item">
+        <div class="school">Class XII, HSC</div>
+        <div class="meta">83%</div>
+      </div>
+      <div class="edu-item">
+        <div class="school">Class X, ICSE</div>
+        <div class="meta">95%</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section id="skills">
+  <div class="container">
+    <div class="sec-head"><h2>what i know</h2></div>
+
+    <div class="skill-block">
+      <div class="cat">▸ programming</div>
+      <div class="chip-row">
+        <span class="chip">Python</span><span class="chip">C</span><span class="chip">C++</span>
+        <span class="chip">Java</span><span class="chip">JavaScript</span><span class="chip">C#</span>
+      </div>
+    </div>
+    <div class="skill-block">
+      <div class="cat">▸ AI </div>
+      <div class="chip-row">
+        <span class="chip">Prompt Engineering</span><span class="chip">AI-Assisted Research</span>
+        <span class="chip">Workflow Automation</span><span class="chip">RAG Systems</span><span class="chip">Agentic AI</span>
+      </div>
+    </div>
+    <div class="skill-block">
+      <div class="cat">▸ tools</div>
+      <div class="chip-row">
+        <span class="chip">Excel</span><span class="chip">Unity</span><span class="chip">SolidWorks</span>
+        <span class="chip">Ansys</span><span class="chip">VS Code</span>
+      </div>
+    </div>
+    <div class="skill-block">
+      <div class="cat">▸ ops &amp; leadership</div>
+      <div class="chip-row">
+        <span class="chip">Project Coordination</span><span class="chip">Event Opeartions</span>
+        <span class="chip">Team Leadership</span><span class="chip">Stakeholder Management</span>
+      </div>
+    </div>
+
+    
+  </div>
+</section>
+
+<!-- ===================== EXPERIENCE ===================== -->
+<section id="experience">
+  <div class="container">
+    <div class="sec-head"><h2>where i've put in work</h2></div>
+
+    <div class="exp-card">
+      <span class="exp-num">01</span>
+      <div class="exp-head">
+        <h3>Captain, Team Grease Monkeys SAE</h3>
+        <span class="exp-date">Aug 2024 – Present</span>
+      </div>
+      <div class="org">ATV Racing &amp; Vehicle Development</div>
+      <ul>
+        <li>Leading a 60+ student engineering team on vehicle development, testing, and competition prep.</li>
+        <li>Building a hydrogen bi-fuel engine ATV — BITS Goa's first hydrogen bi-fuel vehicle.</li>
+        <li>Managed a 500+ lead sponsorship sheet; raised sponsorship from TurboCam worth ₹30,000.</li>
+      </ul>
+    </div>
+
+    <div class="exp-card">
+      <span class="exp-num">02</span>
+      <div class="exp-head">
+        <h3>Startup Operations &amp; Web Dev Intern</h3>
+        <span class="exp-date">May 2024 – Jul 2024</span>
+      </div>
+      <div class="org">Early-stage startup · completed</div>
+      <ul>
+        <li>Built and maintained the company website for an early-stage startup.</li>
+        <li>Ran operations for a startup-led competition — comms, timelines, registrations, execution.</li>
+        <li>Built the World Hydration Day website end-to-end; the event drew 1,300+ participants.</li>
+      </ul>
+    </div>
+
+    <div class="exp-card">
+      <span class="exp-num">03</span>
+      <div class="exp-head">
+        <h3>Organizer, Around The Net</h3>
+        <span class="exp-date">Jan 2024 – May 2024</span>
+      </div>
+      <div class="org">Campus-Wide Table Tennis Tournament</div>
+      <ul>
+        <li>Ran a semester-long tournament with 150+ registrations and 25 matches.</li>
+        <li>Handled scheduling, comms, logistics, and day-of operations.</li>
+        <li>Contributed to the tournament site, which pulled 2,000+ visits.</li>
+      </ul>
+    </div>
+
+    <div class="exp-card">
+      <span class="exp-num">04</span>
+      <div class="exp-head">
+        <h3>Co-Founder, Nevermind</h3>
+        <span class="exp-date">2021 – 2022</span>
+      </div>
+      <div class="org">E-commerce Venture (Dropshipping)</div>
+      <ul>
+        <li>Ran an e-commerce clothing venture — sourcing, site setup, support, inventory, finances.</li>
+        <li>Generated ~₹10,000 net profit across 50+ orders on ₹25,000+ revenue.</li>
+      </ul>
+    </div>
+
+    <div class="tag-inline">
+      <span class="chip">Development Society (Game Dev), BITS Goa</span>
+      <span class="chip">CTE, BITS Goa</span>
+      <span class="chip">BITS Goa Athletics Team</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section id="projects">
+  <div class="container">
+    <div class="sec-head"><h2>stuff i've built</h2></div>
+
+    <div class="proj-grid" id="projGrid">
+
+      <div class="proj-card span2" data-project="rag-company">
+        <div class="proj-top"><h3>Company RAG System</h3><span class="proj-badge live">live</span></div>
+        <p>An AI chatbot that answers employee questions on company policy — leave, benefits, HR rules — straight from the source docs.</p>
+        
+        <div class="proj-cta">what i learned →</div>
+      </div>
+
+      <div class="proj-card" data-project="worldcup">
+        <div class="proj-top"><h3>World Cup Predictor</h3><span class="proj-badge live">live</span></div>
+        <p>Predict every World Cup 2026 match, build a bracket, climb a live leaderboard.</p>
+        
+        <div class="proj-cta">what i learned →</div>
+      </div>
+
+      <div class="proj-card" data-project="resume-rag">
+        <div class="proj-top"><h3>Advanced Resume Rag</h3><span class="proj-badge wip">done</span></div>
+        <p>An intelligent RAG-based recruiter search system that retrieves, ranks, and explains candidates from resume PDFs.</p>
+        
+        <div class="proj-cta">what i learned →</div>
+      </div>
+
+      <div class="proj-card" data-project="jarvis">
+        <div class="proj-top"><h3>Jarvis</h3><span class="proj-badge wip">wip</span></div>
+        <p>speech-to-speech AI assistant — talk to it, it talks back.</p>
+        
+        <div class="proj-cta">what i learned →</div>
+      </div>
+
+      <div class="proj-card" data-project="hydration">
+        <div class="proj-top"><h3>World Hydration Day Website</h3><span class="proj-badge live">live</span></div>
+        <p>Internship-built website and competition — completed with 1,300+ participants.</p>
+        
+        <div class="proj-cta">what i learned →</div>
+      </div>
+
+      <div class="proj-card proj-extra proj-hidden" data-project="snakepong">
+        <div class="proj-top"><h3>BlackJack Game</h3><span class="proj-badge live">done</span></div>
+        <p>featuring betting, card dealing, player actions, dealer AI, and an interactive UI with animations and sound effects.</p>
+        
+        <div class="proj-cta">what i learned →</div>
+      </div>
+
+      <div class="proj-card proj-extra proj-hidden" data-project="pacman">
+        <div class="proj-top"><h3>Pacman Clone</h3><span class="proj-badge live">done</span></div>
+        <p>Enemy AI, pathfinding, scoring, level progression.</p>
+        
+        <div class="proj-cta">what i learned →</div>
+      </div>
+
+      <div class="proj-card proj-extra proj-hidden" data-project="slither">
+        <div class="proj-top"><h3>Slither.io Recreation</h3><span class="proj-badge live">done</span></div>
+        <p>Multiplayer, real-time interactions, collision, dynamic growth.</p>
+        
+        <div class="proj-cta">what i learned →</div>
+      </div>
+
+      <div class="proj-card proj-extra proj-hidden" data-project="gmsite">
+        <div class="proj-top"><h3>Grease Monkeys Site</h3><span class="proj-badge wip">wip</span></div>
+        <p>The website for our SAE ATV racing team, in progress.</p>
+        
+        <div class="proj-cta">what i learned →</div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:32px;">
+      <button class="btn outline1" id="showMoreBtn">show more ↓</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-card">
+      <h2>Contact Me</h2>
+      <p>Project collabs, internships, or just "saw your projects, tell me more", reach out wherever's easiest for you.</p>
+
+      <div class="contact-details">
+        <a href="mailto:aryavikasjain@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/arya-vikas-jain-20328b34a/" target="_blank" rel="noopener">Linkedin</a>
+        <a href="https://www.instagram.com/arya_jain_2006/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-name">Arya <span class="tb-accent">Jain</span></div>
+      <div class="footer-sub">B.E. Computer Science + Economics · BITS Pilani Goa · 2029</div>
+    </div>
+    <div class="tb-right">
+      <a href="mailto:aryavikasjain@gmail.com" class="tb-icon" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 5h18v14H3z"/><path d="M3 6l9 7 9-7"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/arya-vikas-jain-20328b34a/" target="_blank" class="tb-icon" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.11 20.45H3.56V9h3.55v11.45z"/></svg>
+      </a>
+      <a href="https://github.com/aryajain14906" target="_blank" class="tb-icon" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2.1c-3.2.7-3.87-1.4-3.87-1.4-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.72 1.26 3.38.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 015.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.18 1.82 1.18 3.08 0 4.41-2.7 5.38-5.27 5.67.42.36.78 1.07.78 2.17v3.22c0 .3.2.66.79.55A11.5 11.5 0 0023.5 12c0-6.27-5.23-11.5-11.5-11.5z"/></svg>
+      </a>
+      <a href="#home" class="tb-contact">back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== PROJECT MODAL ===================== -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-card">
+    <button class="modal-close" id="modalClose">✕</button>
+    <span class="modal-badge" id="modalBadge"></span>
+    <h3 id="modalTitle"></h3>
+    <p class="desc" id="modalDesc"></p>
+    <div class="modal-section-label">🛠️ skills i leveled up</div>
+    <div class="learned-list" id="modalLearned"></div>
+    <a href="#" target="_blank" class="modal-link" id="modalLink">view on github ↗</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
